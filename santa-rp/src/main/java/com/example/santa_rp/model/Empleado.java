@@ -23,5 +23,5 @@ public class Empleado extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id_empleado;
-    
+    private String nombre;
 }
