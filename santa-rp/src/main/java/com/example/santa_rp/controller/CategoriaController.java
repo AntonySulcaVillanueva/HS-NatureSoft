@@ -62,7 +62,7 @@ public class CategoriaController {
     }
 
     @PostMapping
-    public ResponseEntity<Categoria> sava(@RequestBody Categoria categoria) {
+    public ResponseEntity<Categoria> save(@RequestBody Categoria categoria) {
         Categoria saved = categoriaService.save(categoria);
         return ResponseEntity.ok(saved);
     }
