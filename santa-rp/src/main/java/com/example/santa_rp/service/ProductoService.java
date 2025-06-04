@@ -8,7 +8,7 @@ import java.util.Optional;
 import com.example.santa_rp.model.Producto;
 
 public interface ProductoService {
-
+/*
     List<Producto> findAll();
     Optional<Producto> findById(Long id);
     Producto save(Producto producto);
@@ -39,5 +39,5 @@ public interface ProductoService {
 
     // Metodo para buscar por sku ya sea que contenga una letra semejante o sea igual
     List<Producto> buscarPorSku(String sku);
-
+*/
 }

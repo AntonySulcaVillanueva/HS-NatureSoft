@@ -9,17 +9,17 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "empleado")
-public class Empleado extends Auditable {
+@Table(name = "user_activo")
+public class UserActivo extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_empleado;
+    private Long id;
 
-    private String nombre_completo;
     private String username;
-    private String direccion;
-    private String telefono;
-    private String cargo;
-    private String fecha_de_contrato;
+    private String password;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "empleado", referencedColumnName = "id_empleado")
+    private Empleado empleado;
 }

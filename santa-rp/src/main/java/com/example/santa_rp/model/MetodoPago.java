@@ -9,13 +9,16 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "categoria")
-public class Categoria extends Auditable {
+@Table(name = "metodo_pago")
+public class MetodoPago extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_categoria;
+    private Long id_metodo_pago;
 
     private String nombre;
-    private String descripcion;
+    private String nombre_cuenta;
+    private String numero;
+    private String tipo;
+    private String fecha_registro;
 }

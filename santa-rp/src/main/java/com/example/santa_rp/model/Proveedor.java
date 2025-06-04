@@ -9,17 +9,15 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "empleado")
-public class Empleado extends Auditable {
+@Table(name = "proveedor")
+public class Proveedor extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id_empleado;
+    private Long id_proveedor;
 
-    private String nombre_completo;
-    private String username;
-    private String direccion;
+    private String nombre;
+    private String correo;
+    private String contacto;
     private String telefono;
-    private String cargo;
-    private String fecha_de_contrato;
 }

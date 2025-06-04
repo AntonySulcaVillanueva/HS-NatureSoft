@@ -25,7 +25,7 @@ import lombok.RequiredArgsConstructor;
 @RequestMapping("/section/productos")
 @RequiredArgsConstructor
 public class ProductoController {
-
+	/*
     private final ProductoService productoService;
     
 
@@ -110,4 +110,5 @@ public class ProductoController {
         List<Producto> productos = productoService.buscarPorSku(sku);
         return ResponseEntity.ok(productos);
     }
+    */
 }

@@ -27,8 +27,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 @RestController
 @RequestMapping("/section/categorias")
 @RequiredArgsConstructor
-public class CategoriaController {
-
+public class CategoriaController 
+{
+	/*
     private final CategoriaService categoriaService;
 
 
@@ -85,6 +86,6 @@ public class CategoriaController {
         return ResponseEntity.noContent().build();
     }
     
+    */
     
-    
-}
+	}
